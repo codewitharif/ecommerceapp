@@ -12,8 +12,8 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
         <div className="flex justify-between items-center">
           {/* Premium Logo */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="flex items-center space-x-2 sm:space-x-3 group transition-all duration-300 hover:scale-105"
           >
             <div className="relative">
@@ -23,7 +23,7 @@ const Header = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300"></div>
             </div>
             <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-              StyleShop
+              UrbanKart
             </span>
           </Link>
 
@@ -38,7 +38,7 @@ const Header = () => {
                 <Home className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
                 <span className="font-medium">Home</span>
               </Link>
-              
+
               <Link
                 to="/products"
                 className="flex items-center space-x-2 px-3 py-2 rounded-xl text-gray-600 hover:text-orange-600 hover:bg-orange-50 transition-all duration-300 group backdrop-blur-sm"
@@ -56,7 +56,7 @@ const Header = () => {
               >
                 <Home className="w-5 h-5" />
               </Link>
-              
+
               <Link
                 to="/products"
                 className="p-2 rounded-xl text-gray-600 hover:text-orange-600 hover:bg-orange-50 transition-all duration-300"
@@ -64,7 +64,7 @@ const Header = () => {
                 <Package className="w-5 h-5" />
               </Link>
             </div>
-            
+
             {/* Cart - Always Visible */}
             <Link
               to="/cart"
@@ -77,7 +77,7 @@ const Header = () => {
                     {/* Animated badge */}
                     <div className="absolute -top-2 -right-2 w-4 h-4 sm:w-5 sm:h-5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center shadow-lg">
                       <span className="text-white text-xs font-bold">
-                        {itemCount > 99 ? '99+' : itemCount}
+                        {itemCount > 99 ? "99+" : itemCount}
                       </span>
                     </div>
                     {/* Glow effect */}
@@ -95,7 +95,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      
+
       {/* Subtle bottom accent */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent"></div>
     </header>
